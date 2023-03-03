@@ -1,3 +1,6 @@
+#APP
+This is a React Computer Vision project that serves as a proof of concept for identifying the front and back of US-issued IDs. The project utilizes computer vision techniques to analyze images and recognize ID card templates to accurately locate and classify the front and back of the ID. The implementation of this project aims to demonstrate the potential of computer vision technology in the field of identity verification and improve the accuracy and efficiency of this process.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
