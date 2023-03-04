@@ -39,14 +39,6 @@ function App() {
 
   return (
     <>
-      <div className="bg-gray-800">
-        {result.length > 0 && (
-          <div>
-            <Chart data={result[0]} />
-          </div>
-        )}
-      </div>
-
       <div className="relative bg-gray-900">
         <div className="relative h-80 overflow-hidden bg-gray-900 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2 ml-5">
           <video
@@ -58,7 +50,7 @@ function App() {
             }}
           />
         </div>
-        <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:py-40 lg:px-8">
+        <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:py-30 lg:px-8">
           <div className="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
             <h2 className="text-base font-semibold leading-7 text-cyan-400">
               Activate your camera and place your US-ID/US-DL in the frame
@@ -87,6 +79,14 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="bg-black">
+        {result.length > 0 && (
+          <div>
+            <Chart data={result[0]} />
+          </div>
+        )}
+      </div>
+
       <Icons />
     </>
   );
